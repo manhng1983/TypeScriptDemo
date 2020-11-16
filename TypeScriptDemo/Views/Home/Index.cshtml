@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <div id="msg"></div>
+    @*<script src="~/TypeScript/HelloWorld.js"></script>*@
+    <script src="~/TypeScript/output/HelloWorld.js"></script>
+    <script>
+        // Self executing function here
+        (function () {
+            // your page initialization code here
+            // the DOM will be available here
+            HelloWorld();
+        })();
+    </script>
+</div>
